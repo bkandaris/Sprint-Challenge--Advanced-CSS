@@ -162,7 +162,25 @@ p {
 }
 nav {
   width: 800px;
-  margin: 10px auto;
+  position: fixed;
+  background: lightyellow;
+  width: 100%;
+  opacity: 0.8;
+  margin: auto;
+  animation-name: colorful;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes colorful {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: lightblue;
+  }
+  100% {
+    background-color: white;
+  }
 }
 @media (max-width: 500px) {
   nav {
@@ -196,6 +214,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.header-img {
+  margin-top: 100px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -301,4 +322,45 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.clearing {
+  height: 100px;
+  width: 100%;
+}
+.forms {
+  background: lightyellow;
+  width: 800px;
+  margin: auto;
+  border: crimson 3px double;
+}
+.forms img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+}
+.forms h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+.forms p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.forms form {
+  margin: 20px;
+  font-size: 2rem;
+}
+.forms input {
+  margin: 20px 0px;
+  width: 200px;
+  height: 30px;
+}
+.forms button {
+  height: 50px;
+  width: 100px;
+  font-size: 1.3rem;
+  background-color: #22283A;
+  color: white;
 }
