@@ -1,1 +1,41 @@
 // Navigation code here
+
+nav {
+  width: 800px;
+  position: fixed;
+  background: lightyellow;
+  width: 100%;
+  opacity: .8;
+  margin: auto;
+  animation-name: colorful;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+
+  @keyframes colorful {
+    0% {background-color: white;}
+    50% {background-color: lightblue;}
+    100% {background-color: white;}
+  }
+  
+
+  @media @phone {
+    width: 100%;
+  }
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin: 20px 0px;
+  } ul {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    .listing(bold, 1.5rem);
+
+    @media @phone {
+      width: 80%;
+    }
+  } 
+}
+
+
